@@ -3,111 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Borrador del Contenido</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Universidad Abierta y a Distancia</title>
 </head>
-
+    <link rel="icon" href="logo.PNG" type="image/x-icon">
 <body>
-    <hr
-                        color="red"
-                    >
-    <h1 align="center">Estilos Internos y Externos, selectores CSS</h1>
-    <hr
-                        color="red"
-                    >
-        <h2>Objetivo General</h2>
-        
-            <p>En esta seccion aprenderá edicion de estilos para aplicarlos en diseños web u otros formatos digitales que utilicen codificacion CSS          
-            </p>
-
-                <h3>Objetivos Especificos</h3>
-                    <ul>
-                        <li>Adquirir conocimientos basicos de HTML y sus complementos web</li>
-                        <li>Elaborar una sintaxis clara y precisa para CSS</li>
-                        <li>Aplicar la sintaxis correcta para una vista profesional al usuario final</li>
+    <header>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="conceptos.html">Conceptos</a></li>
+                <li><a href="recursos.html">Recursos</a>
+                    <ul class="submenu">
+                        <li><a href="#">Recurso 1</a></li>
+                        <li><a href="#">Recurso 2</a></li>
                     </ul>
-                    
-        <h2>Materiales</h2>
-            <p> Se consultaron algunas paginas web con documentacion y descripciones graficas lo mas precisas posible, asi; <br>
-                    <ol>
-                        <li><address>https://silicodevalley.com/css-inline-interno-y-externo/</address></li>
-                        <li><address> https://developer.mozilla.org/es/docs/Web/CSS/Introducci%C3%B3n/Selectors</address></li>
-                        <li><address> https://www.mowomo.com/aprender-css-sintaxis-basica-para-dar-estilos-a-un-elemento-html/</address></li>
-                    </ol>
-                
-            </p>
-
-        <h2>Descripcion</h2>
-            <p>Con CSS podemos indicar el aspecto de cada elemento de la página, como por ejemplo: el tipo de letra de un título, el color con que se mostrará un enlace o el interlineado de un párrafo o una lista. <br> 
-                También veremos que CSS puede posicionar y dimensionar los distintos bloques de la página, de forma que podamos establecer la disposición de todos los elementos en la misma.</p>
-
-                <h3><li>Formas y preferencias al aplicar estilos</li></h3>
-                    <p>Las Hojas de Estilo (o Estilos) se pueden incluir de 3 formas diferentes:</p>
-                        
-                        <ul>
-                            <hr>
-                            <li>Estilo en linea</li>
-                                <hr>
-                                <img src="estilolinea.PNG" alt="Linea">
-                                <hr>
-                            <li>Hoja de estilo interna</li>
-                                <hr>
-                                <img src="estilointerno.PNG" alt="Interno">
-                                <p>Elegimos el elemento (selector) al que queremos dar un determinado estilo de presentación (en este caso los párrafos 'p') e incluimos entre llaves “{ }” las características (declaraciones) que vamos a aplicarle, separadas cada una por ';'.</p>
-                                <hr>
-                            <li>Hoja de estilo externa</li>
-                                <hr>
-                                <img src="estiloexterno.PNG" alt="">
-                                <p>En este ejemplo vemos que se ha incluido en la sección HEAD de la página web una etiqueta <link> con los atributos: 
-                                    <br>
-                                    <p></p>
-                                    <strong>rel:</strong>  es el tipo de relación. En este caso el valor es “stylesheet” (hoja de estilo) <br>
-                                    <strong>href:</strong> la dirección URL donde se encuentra la hoja. Es igual que cuando ponemos un enlace con la etiqueta <a>. En este caso es una dirección relativa, y el fichero se encuentra en el directorio "css" y se llama "HojaEstilo1.css" (También valdría una dirección absoluta tipo: http://www.web.com/css/HojaEstilo1.css") <br>
-                                    <strong>type:</strong> tipo de archivo que enlazamos. En este caso el valor 'text/css' indica que es una hoja de estilos CSS en formato texto
-                                </p>
-                        </ul>
-                        
-                <h3><li>Tipos de selectores en CSS</li></h3>
-                    <p>Veamos ahora cuáles son los selectores básicos que podemos utilizar en CSS.</p>
-                        <ol>
-                            <li><strong>Selector Universal</strong></li> 
-                                <p>Sintaxis: * { atributo:valor; }
-
-                                    Ejemplo:* { color: grey; }/* El estilo se aplicará a todos los elementos de la página*/</p>
-                            <li><strong>Selector Etiqueta</strong></li>
-                                <p>Sintaxis: etiqueta { atributo:valor }
-
-                                    Ejemplo: p {color: green;}  /* El estilo se aplicará a todos los elementos <p>.*/</p>
-                            <li><strong>Selector Clase</strong></li>
-                                <p>Sintaxis: .clase { atributo:valor }
-
-                                    Ejemplo: .index {color: red;} /* El estilo se aplicará a cualquier elemento que tenga la clase .index*/</p>
-                                    
-                            <li><strong>Selector Identificador</strong></li>
-                                <p>utiliza el atributo id para seleccionar un elemento. Solo puede haber un elemento con un id dado en un documento.
-
-                                    Sintaxis: #id { atributo:valor }
-                                    
-                                    Ejemplo: #cent {color: blue;} /* El estilo se aplicará al elemento que tenga el id #cent */</p>
-                            <li><strong>Selector Descendente</strong></li>
-                                <p>Un elemento es descendiente de otro cuando se encuentra entre las etiquetas de apertura y de cierre del elemento padre. Su sintaxis es: selector1 selector2… slectorN. Siendo el selector N el elemento sobre el que se aplica el estilo.
-
-                                    selector1 selector2 selectorN{
-                                        propiedad: valor;
-                                    }</p>
-                            <li><strong>Combinacion de Selectores</strong></li>
-                                <p>La combinación de selectores nos permite dar un estilo a todos los selectores indicados.
-
-                                    selector1, selector2, selector3{
-                                        propiedad: valor;
-                                    }</p>
-
-                        </ol>
-
-        <h2>Maquetacion de la pagina index</h2>
-            
-            <img src="maquetacion.PNG" alt="Maquetacion"
-            
-
+                </li>
+                <li><a href="autoevaluacion.html">Autoevaluacion</a></li>
+                <li><a href="autor.html">Autor</a></li>
+            </ul>
+        </nav>
+    </header>
+    
 </body>
-<footer><strong>Elaborado por</strong>  capenaper@unadvirtual.edu.co</footer>
 </html>
