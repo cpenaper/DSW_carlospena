@@ -7,8 +7,8 @@
         {
             "type": "pwa-chrome",
             "request": "launch",
-            "name": "Open planing.html",
-            "file": "c:\\Users\\Andres Peña\\Documents\\GitHub\\DSW-carlospena\\planing.html"
+            "name": "Open inicio.html",
+            "file": "c:\\Users\\Andres Peña\\Documents\\GitHub\\DSW-carlospena\\inicio.html"
         }
     ]
 }

@@ -11,6 +11,18 @@ body {
 
 }
 
+p {
+    color: ivory;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding: 20px;
+}
+
+li {
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightcoral;
+}
 .navegacion {
     width: 95%;
     margin: 20px;
@@ -20,6 +32,15 @@ body {
 .navegacion ul{
     list-style: none;
 
+}
+
+.imagenpresentacion {
+    padding: 25px; margin: 25px; float: right; width: 350px;
+    
+}
+
+.menu {
+    text-align: center;
 }
 
 .menu > li{
@@ -62,11 +83,6 @@ body {
     visibility: visible;
     opacity: 1;
 }
-
-
-
-
-
 
 .titulo {
     
