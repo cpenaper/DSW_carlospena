@@ -10,18 +10,12 @@ body {
     background:#005883;
 
 }
-
-p {
-    color: ivory;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
-    padding: 20px;
-}
-
 li {
+    
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
-    color: lightcoral;
+    font-size: 21px;
+    color: red
 }
 .navegacion {
     width: 95%;
@@ -34,10 +28,106 @@ li {
 
 }
 
-.imagenpresentacion {
-    padding: 25px; margin: 25px; float: right; width: 350px;
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 20px;
+}
+
+.card-container {
+    display: flex;
+    width: 600px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0, .2);
     
 }
+
+.header {
+    border-right: 1px solid #ddd;
+}
+
+.descripcion {
+    background: #fbfbfb;
+
+}
+
+.header, .descripcion {
+    padding: 20px;
+    text-align: center;
+}
+
+.header a {
+    position: relative;
+    display: block;
+}
+
+.header img {
+    border-radius: 10%;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.6) ;
+    margin: 20px 30px;
+    transition: .2sg;
+}
+
+.header a:hover img {
+    box-shadow: 0 0 0 12px rgba(0, 0, 0, 0.1) ;
+}
+
+.imagenpresentacion {
+    
+    padding: 25px; margin: 50px; float: right; width: 350px;
+      
+}
+
+.header h2 {
+    color: #f0522a;
+}
+
+.header h4 {
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.descripcion {
+    position: relative;
+}
+
+.descripcion p {
+    margin: 20px;
+}
+
+.descripcion .social {
+    margin-top: 25px;
+}
+
+@media (max-width:640px){
+    .card-container{
+        display: block;
+        width: 450px;
+    }
+}
+
+.header {
+    padding: 20px 20px 5px 20px;
+    border: none;
+}
+
+.descripcion {
+    padding: 5px 20px 20px 20px;
+    background: transparent;
+}
+
+.externoimage {
+    padding: 20px; margin: 20px; float: unset;
+}
+
+.header h4 {
+    margin: 0;
+}
+
 
 .menu {
     text-align: center;
@@ -91,3 +181,26 @@ li {
     
 }
 
+.generales {
+    margin: 25px;
+}
+
+.especificos {
+    margin: 25px;
+}
+
+h1 {
+    color:white;
+    text-align: center;
+}
+h2 {
+    color: red;
+    margin: 20px;
+}
+p {
+    color: ivory;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding: 20px;
+    
