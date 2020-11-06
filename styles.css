@@ -15,7 +15,7 @@ li {
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 21px;
-    color: red
+    color: #F0B429
 }
 .navegacion {
     width: 95%;
@@ -83,7 +83,7 @@ li {
 }
 
 .header h2 {
-    color: #f0522a;
+    color: #F0B429;
 }
 
 .header h4 {
@@ -118,10 +118,7 @@ li {
 .descripcion {
     padding: 5px 20px 20px 20px;
     background: transparent;
-}
-
-.externoimage {
-    padding: 20px; margin: 20px; float: unset;
+    text-align: justify;
 }
 
 .header h4 {
@@ -147,7 +144,7 @@ li {
 }
 
 .menu li a:hover{
-    color: #A54686;
+    color: #F0B429;
     transition: all .3s;
 }
 
@@ -181,20 +178,34 @@ li {
     
 }
 
-.generales {
-    margin: 25px;
+.intro {
+    margin: 10px;
+    width: 80%;
+    text-align: center;
 }
 
 .especificos {
-    margin: 25px;
+    margin: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+.generales {
+    margin: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+.navegacion {
+    margin-right: 25%;
 }
 
 h1 {
-    color:white;
+    color:#F0B429;
     text-align: center;
 }
 h2 {
-    color: red;
+    color: #F0B429
     margin: 20px;
 }
 p {
@@ -203,4 +214,79 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     padding: 20px;
+}
+.autor {
+    text-align: right;
+    padding-right: 48px;
+    color: ivory;
+}
+.aside {
+    width: 15%;
+    padding: 10px;
+    float: right;
+    height: 100px;
+    margin-right: 53px;
+    margin-top: 1px;
+}
+
+.articulo .selectorimage {
+   
+    margin-left: 30%;
+    width: min-content;
+    float: none;
     
+}
+
+.articulo h2 {
+   
+    color:  #F0B429;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.articulo h3 {
+   
+    color:  #43C7F4;
+    margin-left: 5%;
+    
+    
+}
+
+.principal {
+    margin-top: 1%;
+    margin-right: 5%;
+    font-size: 30px;    
+       
+}
+
+.principal .generales {
+    margin-top: 1%;
+    margin-right: 8%;
+       
+}
+
+.principal .especificos {
+    margin-top: 1%;
+    margin-right: 8%;
+       
+}
+
+.articulos {
+    margin-top: 3%;
+    margin-right: 20%;
+       
+}
+
+.articulos .internoimage {
+   
+    margin-left: 30%;
+    
+}
+
+.articulos .externoimage {
+   
+    margin-left: 30%;
+    
+}
+

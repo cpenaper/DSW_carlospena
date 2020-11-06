@@ -23,54 +23,78 @@
                 <li><a href="autor.html">Autor</a></li>
             </ul>
         </nav>
+        <aside class="aside">
+            <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </aside>
+        
+        <section class="articulos">
+            <article class="articulo">
+                <hr>
+                <h2>QUE ES CSS</h2>
+                <hr>
+                <p>El CSS (hojas de estilo en cascada) es un lenguaje que define la apariencia de un documento escrito en un lenguaje de marcado (por ejemplo, HTML).
+                Así, a los elementos de la página web creados con HTML se les dará la apariencia que se desee utilizando CSS: colores, espacios entre elementos, tipos de letra, ... separando de esta forma la estructura de la presentación.
+                Esta separación entre la estructura y la presentación es muy importante, ya que permite que sólo cambiando los CSS se modifique completamente el aspecto de una página web. Esto posibilita, entre otras cosas, que los usuarios puedan usar hojas de estilo personalizadas (como hojas de estilo de alto contraste o de accesibilidad). <br>
+                El W3C define las especificaciones del estándar CSS. Después, los navegadores intentan implementar esas especificaciones, para que las páginas web se vean igual en todos ellos.
+                <br>
+                Los navegadores cada vez cumplen más y mejor el estándar CSS. Por ejemplo: Internet Explorer 6 cumplía el estándar en sólo un 12% mientras que Internet Explorer 9 lo cumple en un 95%. Por eso se deben maquetar las páginas web siguiendo el estándar CSS y no las especificaciones de un navegador determinado. También hay que procurar mantener actualizado el navegador, ya que a medida que van cumpliendo el estándar, van añadiendo funcionalidades que antes no tenían.
+                </p>
+            </article>
+
+            <article class="articulo">
+                <hr>
+                <h2>SELECTORES EN CSS</h2>
+                <hr>
+                <p>El selector CSS (Cascading Style Sheet) es el nexo de unión entre la hoja de estilos y los documentos a los que se aplique dicha hoja. Ya sean (x)HTML, XLM, SVG... y con independencia del medio en que se muestre (media type).
+
+                    Del conocimiento y buen manejo que se haga del selector CSS dependerá la eficiencia de la hoja de estilos y en muchos casos el poder lograr lo deseado sin necesidad de recurrir a otros lenguajes.
+                    
+                    Un detalle más que significativo de su importancia del selector en CSS lo da el hecho de que hemos pasado de tener unos 20 selectores en CSS2 a más de 70 en el último documento en discusión.1​
+                    
+                    El selector CSS es el identificador en la hoja de estilos del elemento o elementos del DOM a los que se aplicarán las declaraciones contenidas en la regla de la que forma parte dicho selector.
+                    
+                    Como curiosidad, en algunas partes, al elemento del DOM al que aplica el selector CSS se le llama sujeto del selector.
+                </p>
+                <div class="selectorimage">
+                    <img src="Imagenes/css2.jpg" alt="">
+                </div>
+                
+            </article>
+            <br>
+            <br>
+            <article class="articulo">
+                <hr>
+                <h2>ESTILOS EN CSS</h2>
+                <hr>
+                <br>
+                
+                <p>Cuando se habla de apariencia estética o cambios visuales de una web siempre se mencionan los estilos CSS. Vamos a explicar un poco qué son y para qué sirven. CSS es el lenguaje para describir la presentación de páginas web, por ejemplo los colores, el diseño y las fuentes. Nos permite adaptar la presentación a las diferentes necesidades y tipos de dispositivos. El CSS es independiente al HTML y se puede utilizar con cualquier lenguaje de marcado basado en XML. La separación del código HTML de CSS hace que sea más sencillo mantener los sitios, y las hojas de estilo que influyen en una o varias páginas. Esto se conoce como la separación de la estructura de la presentación. <br>
+                    <br>
+                    Actualmente encontramos dos tipos de estilos:
+                </p>
+                    <h3>Internos</h3>
+                <p>CSS encerrado en etiquetas style> /style> dentro de un documento HTML funciona como una hoja de estilo externa, excepto que vive en el documento HTML que diseña en lugar de en un archivo separado, y por lo tanto solo se puede aplicar al documento en el que está vive. Tenga en cuenta que este elemento debe estar dentro del elemento <head> para la validación de HTML (aunque funcionará en todos los navegadores actuales si se coloca en el body ).</p>
+                <div class="internoimage">
+                    <img src="imagenes/interno.jpg" alt="">
+                </div>
+                    <h3>Externos</h3>
+                <p>Una vez creado, basta incluir un link a ese archivo .css en cada página que queramos aplicar estos estilos. De esta forma, una misma hoja de estilos puede aplicarse a cualquier número de páginas web, simplemente incluyendo en todas ellas el link correspondiente.
+
+                    Como cualquier link, la localización del archivo CSS puede ser absoluta o relativa, dependiendo de su ubicación dentro del propio sitio web, o en otra dirección.
+                    
+                    El link siempre debe insertarse dentro de las etiquetas HEAD del encabezamiento de la página Web:</p>
+                <div class="externoimage">
+                    <img src="imagenes/externo.jpg" alt="">
+                </div>
+            </article>
+            
+        </section>
     </header>
-    <div class="imagenpresentacion" >
-        <img src="imagenes/css.jpg" alt="">
-        
-    </div>
-        <br>
-        <br>
-        <br>
-        <h1>QUE SON SELECTORES EN CSS ?</h1>
-        <br>
-        
-        <p>El selector CSS (Cascading Style Sheet) es el nexo de unión entre la hoja de estilos y los documentos a los que se aplique dicha hoja. Ya sean (x)HTML, XLM, SVG... y con independencia del medio en que se muestre (media type).
-            Del conocimiento y buen manejo que se haga del selector CSS dependerá la eficiencia de la hoja de estilos y en muchos casos el poder lograr lo deseado sin necesidad de recurrir a otros lenguajes. El selector CSS es el identificador 
-            en la hoja de estilos del elemento o elementos del DOM a los que se aplicarán las declaraciones contenidas en la regla de la que forma parte dicho selector.
-            
-        </p>
-        <br>
-        <br>
-        <br>
-        <h1>TIPOS DE SELECTORES</h1>
-        <br>
-        <h2>Estilos Externos</h2>
-        <br>
-        <p>Para definir el estilo de una página de un web desde un archivo externo, debe crearse un archivo de texto, conteniendo las definiciones, y guardarlo con la extensión *.css.
 
-            Una vez creado, basta incluir un link a ese archivo .css en cada página que queramos aplicar estos estilos. De esta forma, una misma hoja de estilos puede aplicarse a cualquier número de páginas web, simplemente incluyendo en todas ellas el link correspondiente.
-            
-            Como cualquier link, la localización del archivo CSS puede ser absoluta o relativa, dependiendo de su ubicación dentro del propio sitio web, o en otra dirección.
-        </p>
-        <div class="externoimage">
-            <img src="imagenes/externo.jpg" alt="">
-        </div>
-    </div>
-    <br>
-    <h2>Estilos Internos</h2>
-        <br>
-        <p>CSS encerrado en etiquetas style>/style> dentro de un documento HTML funciona como una hoja de estilo externa, excepto que vive en el documento HTML que diseña en lugar de en un archivo separado, y por lo tanto solo se puede aplicar al documento en el que está vive. Tenga en cuenta que este elemento debe estar dentro del elemento head> para la validación de HTML (aunque funcionará en todos los navegadores actuales si se coloca en el body ).
-        </p>
-    </div>
-    <div class="externoimage">
-        <img src="imagenes/interno.jpg" alt="">
-    </div>
+    
 
-
-
+    
+   
 </body>
-    <div class="autor">
-        "Por Andres Peña"
-    </div>
-</body>
+   
 </html>
