@@ -290,6 +290,13 @@ p {
     
 }
 .sopa {
-    text-align: center;
+    float: right;
+    padding-right: 65px;
     
+}
+
+.evaluacion {
+    
+    float: left;
+    padding-left: 65px;
 }
